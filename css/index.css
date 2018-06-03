@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.banner604{
+    position: relative;/*相对定位占位置，所以这个父盒子不能给高*/
+}
+
+.banner604 a{
+    position: absolute;/*绝对定位不占位置*/
+    top: 0;
+    left: 0;
+    width: 100%;/*宽度为100%必须写出来，不写的话宽度与字体一样大，因为父盒子没有给宽度*/
+    height: 604px;
+    background: url("../images/banner.jpg") no-repeat top center;/*top center 让这个背景图片居中对齐*/
+}
+.main{
+    /*height: 800px;*/
+    position: relative;
+}
+.main .slider{
+    float: left;
+    width: 730px;
+    height: 453px;
+    margin-top: 12px;
+    margin-left: 220px;
+    background-color: pink;
+    position: relative;
+}
+.main .news{
+    float: right;
+    width: 248px;
+    height: 451px;
+    border: 1px solid #E4E4E4;
+    margin-top: 12px;
+}
+.slider ul{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    margin-left: -66px;
+}
+ .slider ul li{
+     float: left;
+     width: 18px;
+     height: 18px;
+     background-color: #3E3E3E;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 18px;
+     color: #fff;
+     margin: 0 2px;
+     /*margin-left: 4px;*/
+   cursor: pointer;
+
+ }
+ .slider ul li.current{
+     background-color: #B61B1F;
+ }
+ .triangle .tri-l,.triangle .tri-r{
+     width: 28px;
+     height: 62px;
+     position: absolute;
+     top: 50%;
+     margin-top: -31px;
+     font:400 18px/62px "宋体";
+     font-family: "宋体";
+     line-height: 62px;
+     text-align: center;
+     color:#fff;
+     background: rgba(0,0,0,.5);
+
+ }
+ .tri-l{
+     left: 0;
+ }
+ .tri-r{
+     right: 0;
+ }
