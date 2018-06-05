@@ -120,9 +120,9 @@
 .lifeservi {
     height:251px;
     overflow: hidden;
-    width: 248px;
+    width: 248px;/*给宽度再使用overflow对浏览器比较友好*/
 }
-.lifeservi ul {
+.lifeservi ul {/*增加一个盒子使盒子能装下小盒子排列在一行上*/
     width: 252px;
 }
 .lifeservi ul li {
@@ -150,6 +150,36 @@
 }
 .lifeservi-icon2 a i {
     background-position: right -25px;
+}
+.lifeservi-icon3 a i {
+    background-position: right -100px;
+}
+.lifeservi-icon4 a i {
+    background-position: right -75px;
+}
+.lifeservi-icon5 a i {
+    background-position: right -50px;
+}
+.lifeservi-icon6 a i {
+    background-position: right -150px;
+}
+.lifeservi-icon7 a i {
+    background-position: right -125px;
+}
+.lifeservi-icon8 a i {
+    background-position: right -175px;
+}
+.lifeservi-icon9 a i {
+    background-position: right -250px;
+}
+.lifeservi-icon10 a i {
+    background-position: right -275px;
+}
+.lifeservi-icon11 a i {
+    background-position: right -250px;
+}
+.lifeservi-icon12 a i {
+    background-position: right -225px;
 }
 .lifeservi .song {
     background: url(../images/song.png) no-repeat right top;
