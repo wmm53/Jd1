@@ -157,6 +157,9 @@
 .lifeservi-icon4 a i {
     background-position: right -75px;
 }
+.lifeservi-icon5 a{
+    background: url("../images/song.png") no-repeat right top;
+}
 .lifeservi-icon5 a i {
     background-position: right -50px;
 }
