@@ -314,7 +314,7 @@ s, i, em {
 }
 .dropdown .dt a {
     display: block;
-    height: 44px;
+    height: 44px;/*不能写宽度100%，不写宽度，继承父亲的宽度并且给左右padding值不会撑大盒子，继承过来的padding值不会影响盒子大小*/
     font: 400 15px/44px "microsoft yahei";
     background-color: #B1191A;
     color: #fff;
