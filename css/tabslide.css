@@ -1,0 +1,65 @@
+.message ul{
+    display: flex;
+}
+.message ul li:hover a{
+    text-decoration:none;
+}
+.message li{
+    cursor: pointer;
+    position: relative;
+    transition: 0.1s all linear;
+}
+ .message li::before {
+   content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #C81623;
+    transition: 0.2s all linear;
+}
+
+.message li:hover::before {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-delay: 0.01s;
+    border-bottom-color: #C81623;
+}
+.message li:hover ~ li::before {
+    left: 0;
+}
+.active ~ li::before {
+    left: 0;
+}
+.active::before {
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.sale{
+    margin-top: 11px;
+    margin-left: 12px;
+}
+.sale a{
+    display: block;
+    margin-bottom: 6px;
+}
+/*.sale,.announcement a{
+  display: block;
+    margin-left: 12px;
+    margin-bottom: 6px;
+}
+
+/*
+$('li').on('click', function () {
+  $(this).addClass('active').siblings().removeClass('active')
+})
+
+*/
+/*
+CSS3 transition 过渡属性
+
+
+*/

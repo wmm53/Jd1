@@ -243,7 +243,7 @@ s, i, em {
     float: left;
     font: 16px/36px "microsoft yahei";
     color: #fff;
-    cursor: pointer; /* 鼠标变成小手*/
+    cursor: pointer;
 }
 
 .car {

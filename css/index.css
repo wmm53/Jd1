@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;/*宽度为100%必须写出来，不写的话宽度与字体一样大，因为父盒子没有给宽度*/
     height: 604px;
-    background: url("../images/banner.jpg") no-repeat top center;/*top center 让这个背景图片居中对齐*/
+    /*background: url("../images/banner.jpg") no-repeat top center;top center 让这个背景图片居中对齐*/
 }
 #mask{
     width: 100%;
@@ -44,70 +44,73 @@
 .main{
     /*height: 800px;*/
     position: relative;
+    background-color: #f5f5f5;
 }
-.main .slider{
-    float: left;
-    width: 730px;
-    height: 453px;
-    margin-top: 12px;
-    margin-left: 220px;
-    background-color: pink;
+.main .smallimg{
+    width:190px;
+    height: 470px;
+    position: absolute;
+    left: 810px;
+    top: -10px;
+    margin: 10px;
+}
+.main .message{
+    width:190px;
+    height: 470px;
+    position: absolute;
+    left: 1010px;
+    top: -10px;
+    margin: 10px;
+    background-color: #fff;
+}
+.smallimg img{
+    padding-bottom: 10px;
+}
+.no-login {
     position: relative;
 }
+.no-login img{
+    position: absolute;
+    top: -10px;
+    left: 63px;
+}
+.message .welcome {
+    width: 70px;
+    height: 25px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+#nav-login{
+    background-color: #fff
+}
+#plus-vip{
+    background-color: #363634
+}
+.message #nav-login:hover{
+    background-color: #C81623;
+}
+#nav-login:hover a{
+    color: #fff;
+}
+#plus-vip:hover a{
+    color: #fff;
+}
+.message #plus-vip:hover{
+    background-color: #C81623;
+}
+.second-kill div{
+    border-left: 1px solid #f5f5f5;
+
+}
+/*.active{*/
+    /*border-bottom: 2px solid #C81623;*/
+/*}*/
 .main .news{
     float: right;
     width: 248px;
     height: 451px;
     border: 1px solid #E4E4E4;
     margin-top: 12px;
-}
-.slider ul{
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    margin-left: -66px;
-}
- .slider ul li{
-     float: left;
-     width: 18px;
-     height: 18px;
-     background-color: #3E3E3E;
-     border-radius: 50%;
-     text-align: center;
-     line-height: 18px;
-     color: #fff;
-     margin: 0 2px;
-     /*margin-left: 4px;*/
-   cursor: pointer;
-
- }
- .slider ul li.current{
-     background-color: #B61B1F;
- }
- .triangle .tri-l,.triangle .tri-r{
-     width: 28px;
-     height: 62px;
-     position: absolute;
-     top: 50%;
-     margin-top: -31px;
-     font:400 18px/62px "宋体";
-     font-family: "宋体";
-     line-height: 62px;
-     text-align: center;
-     color:#fff;
-     background: rgba(0,0,0,.5);
-
- }
- .tri-l{
-     left: 0;
- }
- .tri-r{
-     right: 0;
- }
-
-.tri-l:hover,.tri-r:hover {
-    background: rgba(0,0,0,.4);
-    color: #fff;
 }
 .news {
     width: 248px;
@@ -132,6 +135,7 @@
     color: #666;
     padding-left: 15px;
 }
+
 .jd-news .dt a{
     float: right;
     font: 13px/43px "宋体";
@@ -147,7 +151,7 @@
     font-weight: 700;
     margin-right: 5px;
 }
-.lifeservi {
+.lifeservice {
     height:251px;
     overflow: hidden;
     width: 248px;/*给宽度再使用overflow对浏览器比较友好*/
@@ -179,29 +183,10 @@
     background: url(../images/icon_lifeserv.png) no-repeat;
 }
 
-.lifeservi .song {
-    background: url(../images/song.png) no-repeat right top;
-}
+/*.lifeservi .song {*/
+    /*background: url(../images/song.png) no-repeat right top;*/
+/*}*/
 
-/*11 huodong*/
-.todays {
-    position: relative;
-}
-.night {
-    margin: 10px 0 28px 0;
-}
-.night-r {
-    width:1000px;
-    height: 160px;
-    float: right;
-}
-.night-r ul {
-    width: 500%;
-    _width: 400%;
-}
-.night-r li {
-    float: left;
-    margin-right: 1px;
-}
+
 
 
